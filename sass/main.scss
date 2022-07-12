@@ -1,6 +1,7 @@
 // UTILS
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/placeholder';
 
 // BASE
 @import './base/common';
@@ -10,15 +11,25 @@
 
 // HEADER
 @import './layouts/header';
+@import './layouts/button-primary';
 @import './layouts/main-nav';
 @import './layouts/logo';
 @import './layouts/site-nav';
 
+
 // Mobile-menu
 @import './layouts/mobile-menu';
+
 
 // HERO
 @import './layouts/hero';
 
 // ABOUT
 @import './layouts/about';
+
+// SERVICES
+@import './layouts/services';
+
+// WORKS
+@import './layouts/works';
+@import './layouts/gallery';

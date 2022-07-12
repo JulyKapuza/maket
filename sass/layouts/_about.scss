@@ -38,14 +38,14 @@
 
 .about__item::after{
     position: absolute;
-    top: 355px;
+    top: 350px;
     left: 50%;
 
     transform: translateX(-50%);
     
     content: '';
     width: 50%;
-    height: 40px;
+    height: 60px;
     background: rgba(76, 175, 80, 0.8);
 
 }

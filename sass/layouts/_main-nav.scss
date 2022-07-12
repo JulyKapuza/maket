@@ -1,16 +1,43 @@
 .main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     @media screen and (max-width: 767px){
         padding-top: 20px;
         padding-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        
+        
 
 
     }
 
-    
+    @media screen and (min-width:768px) {
+
+        padding-top: 32px;
+        padding-bottom: 0;
+        align-content: center;
+        
+    }
 
     
+}
+
+.main-nav__button {
+
+    @media screen and (max-width:767px) {
+        display: none;
+
+    }
+
+    @media screen and (min-width:768px) {
+        
+    }
+}
+
+.button--primary.main-nav__button{
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+        margin-left: 32px;
+    }
 }

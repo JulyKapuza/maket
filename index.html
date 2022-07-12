@@ -4,64 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- Шапка сторінки -->
     <header class="page-header">
       <div class="container">
-          <nav class="main-nav">
+        <nav class="main-nav">
           <a class="logo link tracking-in-expand" href="">SQWD</a>
 
-            <button
+          <button
             class="menu-toggle js-open-menu"
             type="button"
             aria-expanded="false"
             aria-controls="menu-container"
           >
-          <svg class="menu-icon" aria-label="Переключатель мобильного меню">
+            <svg class="menu-icon" aria-label="Переключатель мобильного меню">
               <use class="icon-menu" href="./image/sprite-mob.svg#icon-menu"></use>
             </svg>
+          </button>
+          <button class="button button--primary main-nav__button" type="button">
+            Contact us >
+          </button>
+
+          <div class="menu-container js-menu-container" id="menu-container">
+            <button
+              class="menu-toggle js-close-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+            >
+              <svg class="menu-icon" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./image/sprite-mob.svg#icon-close"></use>
+              </svg>
             </button>
 
-           
-        <div class="menu-container js-menu-container" id="menu-container" >
+            <div class="menu-container__nav">
+              <button class="button button--primary" type="button">Contact us ></button>
 
-           <button
-            class="menu-toggle js-close-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="menu-container">
-         <svg class="menu-icon" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./image/sprite-mob.svg#icon-close"></use>
-              
-            </svg>
-            </button>
-             <div class="menu-container__nav">
               <ul class="site-nav list">
-                    <li class="site-nav__item">
-                      <a class=" site-nav__link link" href="">Works</a></li>
-                    <li class="site-nav__item">
-                      <a class=" site-nav__link link" href="">About</a></li>
-                    <li class="site-nav__item">
-                      <a class=" site-nav__link link" href="">Service</a></li>
-                    <li class="site-nav__item">
-                      <a class=" site-nav__link link" href="">Blog</a></li>
-                    <li class="site-nav__item">
-                      <a class=" site-nav__link link" href="">Contact</a></li>
-             </ul>
-
-             </div>
-                
-
-      </nav>
-
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">Works</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">About</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">Service</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">Blog</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -70,150 +81,204 @@
         <div class="container">
           <h1 class="hero__title">Where great ideas come to life</h1>
           <p class="hero__text">Passionate creative studio helping startups grow their business!</p>
-        <ul class="hero-slide list">
-          <li class="hero-slide__item hero-slide__item--current">01</li>
-          <li class="hero-slide__item">02</li>
-          <li class="hero-slide__item">03</li>
-        </ul>
-
+          <ul class="hero-slide list">
+            <li class="hero-slide__item hero-slide__item--current">01</li>
+            <li class="hero-slide__item">02</li>
+            <li class="hero-slide__item">03</li>
+          </ul>
         </div>
-        
       </section>
       <!-- Секція про нас -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--big">We are <span class="accent">the sqwd</span></h2>
-        <p class="section__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </p>
-        <ul class="about list">
-          <li class="about__item"><img src="./image/about/portrait.jpg" alt="Portrait" width="309px" /></li>
-          <li class="about__item"><img src="./image/about/silhouette.jpg" alt="Silhouette" width="309px" /></li>
+          <h2 class="section__title section__title--big">
+            We are <span class="accent">the sqwd</span>
+          </h2>
           <p class="section__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
           </p>
-        </ul>
-
+          <ul class="about list">
+            <li class="about__item">
+              <img src="./image/about/portrait.jpg" alt="Portrait" width="309" />
+            </li>
+            <li class="about__item">
+              <img src="./image/about/silhouette.jpg" alt="Silhouette" width="309" />
+            </li>
+          </ul>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt.
+          </p>
         </div>
-        
       </section>
       <!-- Секція послуги -->
-      <section>
+      <section class="section section--grey">
         <div class="container">
-          <h2>Our Services</h2>
-        <ul class="list">
-            <li>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="link" href="">Read more</a>
+          <h2 class="section__title">Our Services</h2>
+          <ul class="services list">
+            <li class="services__item">
+              <div class="services__box">
+                <h3 class="services__title">Branding</h3>
+                <div class="services__wrap">
+                  <svg class="services__icon" width="25" height="25">
+                    <use href="./image/sprite.svg#paste"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+              </p>
+              <a class="services__link link" href="">Read more</a>
             </li>
-            <li>
-                <h3>Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="link" href="">Read more</a>
-            </li>
-            <li>
-                <h3>Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="link" href="">Read more</a>
-            </li>
-        </ul>
+            <li class="services__item">
+              <div class="services__box">
+                <h3 class="services__title">Design</h3>
+                <div class="services__wrap">
+                  <svg class="services__icon" width="25" height="25">
+                    <use href="./image/sprite.svg#magic-wand"></use>
+                  </svg>
+                </div>
+              </div>
 
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+              </p>
+              <a class="services__link link" href="">Read more</a>
+            </li>
+            <li class="services__item">
+              <div class="services__box">
+                <h3 class="services__title">Development</h3>
+                <div class="services__wrap">
+                  <svg class="services__icon" width="25" height="25">
+                    <use href="./image/sprite.svg#stats-dots"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt.
+              </p>
+              <a class="services__link link" href="">Read more</a>
+            </li>
+          </ul>
         </div>
-        
       </section>
       <!-- Секція приклади робіт -->
-      <section>
+      <section class="section">
         <div class="container">
-          <h2>Latest Works</h2>
-        <ul class="list">
-            <li><button type="button">All</button></li>
-            <li><button type="button">Web Design</button></li>
-            <li><button type="button">Branding</button></li>
-            <li><button type="button">Photography</button></li>
-            <li><button type="button">Illustration</button></li>
-        </ul>
-        <ul class="list">
-            <li>
-                <img src="./image/works/photo.jpg" alt="Camera" width="455">
-                <h3>Photography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2 class="section__title">Latest Works</h2>
+          <ul class="works list">
+            <li class="works__item"><button class="works__btn" type="button">All</button></li>
+            <li class="works__item">
+              <button class="works__btn" type="button">Web Design</button>
             </li>
-            <li>
-                <img src="./image/works/cat.jpg" alt="Cat" width="455">
-                <h3>Photography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li class="works__item"><button class="works__btn" type="button">Branding</button></li>
+            <li class="works__item">
+              <button class="works__btn" type="button">Photography</button>
             </li>
-            <li>
-                <img src="./image/works/screen.jpg" alt="Screen" width="455">
-                <h3>Photography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li class="works__item">
+              <button class="works__btn" type="button">Illustration</button>
             </li>
-            <li>
-                <img src="./image/works/laptop.jpg" alt="Laptop" width="455">
-                <h3>Photography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <img src="./image/works/photo.jpg" alt="Camera" width="455" />
+                <div class="card-content">
+                  <h3 class="card-content__title">Photography</h3>
+                  <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
             </li>
-        </ul>
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <img src="./image/works/cat.jpg" alt="Cat" width="455" />
+                <div class="card-content">
+                  <h3 class="card-content__title">Photography</h3>
+                  <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <img src="./image/works/screen.jpg" alt="Screen" width="455" />
+                <div class="card-content">
+                  <h3 class="card-content__title">Photography</h3>
+                  <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
+                <img src="./image/works/laptop.jpg" alt="Laptop" width="455" />
+                <div class="card-content">
+                  <h3 class="card-content__title">Photography</h3>
+                  <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-        </div>
-        
       <!-- Секція команда -->
       <section>
         <div class="container">
           <h2>The Team</h2>
           <ul class="list">
-            <li><img src="./image/team/tom.jpg" alt="Tom Jones" width="370px"></li>
-            <li><img src="./image/team/michael.jpg" alt="Michael Fraup" width="370px"></li>
-            <li><img src="./image/team/tim.jpg" alt="Tim Cahill" width="370px"></li>
-        </ul>
-
+            <li><img src="./image/team/tom.jpg" alt="Tom Jones" width="370" /></li>
+            <li><img src="./image/team/michael.jpg" alt="Michael Fraup" width="370" /></li>
+            <li><img src="./image/team/tim.jpg" alt="Tim Cahill" width="370" /></li>
+          </ul>
         </div>
-        
       </section>
       <!-- Секція відгуки -->
       <section>
         <div class="container">
           <h2>Reviews</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <p>David James Web Design</p>
-        <ul class="list">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>David James Web Design</p>
+          <ul class="list">
             <li>
-                <p>Want to work together?</p>
-                <p>Amazing. Tell us about your project!</p>
+              <p>Want to work together?</p>
+              <p>Amazing. Tell us about your project!</p>
             </li>
-             <li>
-                <p>Contact us</p>
-                <p>Get in touch</p>
+            <li>
+              <p>Contact us</p>
+              <p>Get in touch</p>
             </li>
-        </ul>
-
+          </ul>
         </div>
-        
       </section>
     </main>
     <!-- Футер -->
     <footer>
       <div class="container">
         <div>
-            <address>
-                <ul class="list">
-                    <li><a class="link" href="https://goo.gl/maps/MxQPXMf4m8k7n9KbA">3rd Floor, Santa Monica Beach, CA, San Francisco</a></li>
-                    <li><a class="link" href="tel:+3590123456789">(359) 0 123 456 789</a></li>
-                    <li><a class="link" href="mailto:info@yourmail.com">info@yourmail.com</a</li>
-                </ul>
-            </address>
+          <address>
+            <ul class="list">
+              <li>
+                <a class="link" href="https://goo.gl/maps/MxQPXMf4m8k7n9KbA"
+                  >3rd Floor, Santa Monica Beach, CA, San Francisco</a
+                >
+              </li>
+              <li><a class="link" href="tel:+3590123456789">(359) 0 123 456 789</a></li>
+              <li><a class="link" href="mailto:info@yourmail.com">info@yourmail.com</a></li>
+            </ul>
+          </address>
         </div>
         <div>
-            <p>Copyright 2016 - All Rights Reserved - Designed by JD</p>
+          <p>Copyright 2016 - All Rights Reserved - Designed by JD</p>
         </div>
-
       </div>
-        
-        
     </footer>
     <script defer src="js/mobile-menu.js"></script>
   </body>

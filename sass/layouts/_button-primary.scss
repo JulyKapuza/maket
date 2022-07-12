@@ -1,0 +1,30 @@
+/* МОДИФІКАТОР ОСНОВНОЇ КНОПКИ */
+
+.button--primary {
+    @extend %button;
+
+    min-width: 160px;
+    padding: 10px 32px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms var(--timing);
+    
+
+    @media screen and (max-width:1199px) {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+      
+
+    
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-bdc);
+    }
+}
