@@ -11,8 +11,9 @@
 
 // HEADER
 @import './layouts/header';
-@import './layouts/button-primary';
+
 @import './layouts/main-nav';
+@import './layouts/button-primary';
 @import './layouts/logo';
 @import './layouts/site-nav';
 
@@ -33,3 +34,5 @@
 // WORKS
 @import './layouts/works';
 @import './layouts/gallery';
+
+@import './layouts/slider';

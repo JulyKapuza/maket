@@ -141,27 +141,6 @@ address {
           backdrop-filter: brightness(0.7);
 }
 
-/* МОДИФІКАТОР ОСНОВНОЇ КНОПКИ */
-.button--primary {
-  min-width: 160px;
-  padding: 10px 32px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  letter-spacing: 0.06em;
-  -webkit-transition: background-color 250ms var(--timing);
-  transition: background-color 250ms var(--timing);
-}
-@media screen and (max-width: 1199px) {
-  .button--primary {
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.button--primary:hover, .button--primary:focus {
-  background-color: var(--btn-bdc);
-}
-
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +176,33 @@ address {
   .button--primary.main-nav__button {
     margin-bottom: 0;
     margin-left: 32px;
+  }
+}
+
+/* МОДИФІКАТОР ОСНОВНОЇ КНОПКИ */
+.button--primary {
+  min-width: 160px;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+  -webkit-transition: background-color 250ms var(--timing);
+  transition: background-color 250ms var(--timing);
+}
+@media screen and (max-width: 1199px) {
+  .button--primary {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.button--primary:hover, .button--primary:focus {
+  background-color: var(--btn-bdc);
+}
+
+@media screen and (min-width: 1200px) {
+  .button--hidden {
+    display: none;
   }
 }
 
@@ -382,6 +388,7 @@ address {
   letter-spacing: 0.04;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
   color: var(--white-color);
 }
 
@@ -639,4 +646,87 @@ address {
   text-align: right;
   letter-spacing: 0.832px;
   color: #C2C2C2;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  background-image: url(../image/home.svg);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+.swiper-slide__avatar {
+  background-image: url(../image/reviews/first.png);
+  height: 85px;
+  width: 85px;
+  margin-bottom: 32px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrap {
+  background: #FAFAFA;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 32px;
+  margin-bottom: 16px;
+}
+
+.slider__text {
+  height: 217px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  color: #000000;
+  background-image: repeating-linear-gradient(to top, #FAFAFA, #FAFAFA 31px, #E1E1E1 1px, #E1E1E1 32px);
+}
+
+.swiper-slide__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  /* or 26px */
+  text-align: center;
+  color: #000000;
+  margin-bottom: 28px;
 }/*# sourceMappingURL=main.css.map */

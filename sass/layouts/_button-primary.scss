@@ -17,9 +17,7 @@
         margin-left: auto;
         margin-right: auto;
         
-    }
-
-      
+    }  
 
     
 
@@ -27,4 +25,10 @@
     &:focus {
         background-color: var(--btn-bdc);
     }
+}
+.button--hidden{
+    @media screen and (min-width:1200px) {
+            display: none;
+        }
+
 }
