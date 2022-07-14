@@ -241,23 +241,20 @@
         </div>
       </section>
       <!-- Секція відгуки reviews -->
-      <section class="section">
-        <div class="container">
-          <h2>Reviews</h2>
-          <!-- <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>David James Web Design</p> -->
 
-          <!-- Swiper -->
-  <div class="swiper myswiper">
+      <article class="article">
+         <div class="container">
+          <h1>Reviews</h1>
+          
+  <div class="swiper reviews">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <span class="swiper-slide__avatar"></span>
           <div class="wrap">
-            <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            <div class="wight">
+               <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            </div>
+           
           </div>
 
           <div class="swiper-slide__subtitle">
@@ -266,38 +263,29 @@
          
           
          </div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">
+          <span class="swiper-slide__avatar"></span>
+          <div class="wrap">
+            <div class="wight">
+               <p class="slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            </div>
+           
+          </div>
+
+          <div class="swiper-slide__subtitle">
+             <p>Emily, Los Angeles</p>
+          </div>
+        </div>
         <div class="swiper-slide">Slide 3</div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".myswiper", {
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-
-          <!-- <ul class="list">
-            <li>
-              <p>Want to work together?</p>
-              <p>Amazing. Tell us about your project!</p>
-            </li>
-            <li>
-              <p>Contact us</p>
-              <p>Get in touch</p>
-            </li>
-          </ul> -->
-        </div>
-      </section>
+ </div>
+      </article>
+  
     </main>
     <!-- Футер -->
     <footer>
@@ -321,8 +309,19 @@
       </div>
     </footer>
     <script defer src="js/mobile-menu.js"></script>
+     <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".reviews", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
    
-    
-  </script>
   </body>
 </html>
