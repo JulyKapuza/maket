@@ -655,7 +655,6 @@ address {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +668,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #fff;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -678,63 +678,114 @@ address {
   bottom: 0;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-  background-image: url(../image/home.svg);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 12px;
-  width: 12px;
+.swiper-pagination-bullet {
+  background-color: #C7133E;
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 0;
+  border-radius: 50%;
 }
 
-.swiper-slide__avatar {
-  background-image: url(../image/reviews/first.png);
-  height: 85px;
-  width: 85px;
-  margin-bottom: 32px;
+.swiper-pagination-bullet:first-child {
+  background-image: url(/image/reviews/photo-jul.png);
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+  background-image: url(/image/reviews/photo-max.png);
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+  background-image: url(/image/avatar/viktoria.png);
+}
+
+.swiper-pagination-bullet:nth-child(4) {
+  background-image: url(/image/avatar/yulia.png);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+          box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
-.wrap {
+.thumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.thumb__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.swiper-slide__content {
   position: relative;
   background: #FAFAFA;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 43px;
   padding-bottom: 17px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 
-.slider__text::after {
-  content: "“";
-  color: #E1E1E1;
-  font-size: 120px;
+.swiper-slide__subtitle {
+  position: relative;
+}
+
+.swiper-slide__content::after {
+  content: "⋯";
   position: absolute;
-  top: 20px;
-  left: 50px;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0;
+  color: #C7133E;
+  font-size: 40px;
 }
 
-.slider__text {
-  width: 80%;
-  text-indent: 54px;
-  font-weight: 700;
+.swiper-slide__content::before {
+  content: " ";
+  position: absolute;
+  top: 30px;
+  left: 53px;
+  z-index: 1;
+  background-image: url(../images/customer-reviews/mobile/cust-quotes-mob-x1.png);
+  width: 54px;
+  height: 40px;
+}
+
+.swiper-slide__text {
+  -ms-flex-preferred-size: 87%;
+      flex-basis: 87%;
+  z-index: 2;
   font-size: 12px;
-  line-height: 31px;
+  line-height: 2.58;
   text-align: center;
-  color: #000000;
 }
 
-.wight {
+.swiper-slide__thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,11 +798,36 @@ address {
 }
 
 .swiper-slide__subtitle {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 186%;
-  /* or 26px */
+  line-height: 1.86;
   text-align: center;
-  color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 76px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list__link {
+  height: 44px;
+  width: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-list__icon {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

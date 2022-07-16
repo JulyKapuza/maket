@@ -1,53 +1,121 @@
 .swiper {
     width: 100%;
-    
+
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background: #fff;
 }
+
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
-.swiper-pagination-fraction{
-    bottom:0;
+.swiper-pagination-fraction {
+    bottom: 0;
 }
 
-.swiper-pagination-bullet-active{
-    background-color: #fff;
-    background-image:url(../image/home.svg) ;
-    display: inline-flex;
-    height: 12px;
-    width: 12px;
+// зміна значків падінейшин початок
+.swiper-pagination-bullet {
+    background-color: #C7133E;
+    opacity: 0.7;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0;
+    border-radius: 50%;
     
+
 }
 
-.swiper-slide__avatar{
-    background-image: url(../image/reviews/first.png);
+.swiper-pagination-bullet:first-child {
     
-    height: 85px;
-    width: 85px;
-    margin-bottom: 32px;
+    background-image: url(/image/reviews/photo-jul.png);
+   
+    }
+    
 
+
+.swiper-pagination-bullet:nth-child(2) {
+    
+    background-image: url(/image/reviews/photo-max.png);
+    
+   
+        
+}
+
+.swiper-pagination-bullet:nth-child(3) {
+    background-image: url(/image/avatar/viktoria.png);
+
+
+}
+
+.swiper-pagination-bullet:nth-child(4) {
+    background-image: url(/image/avatar/yulia.png);
+
+
+}
+// зміна значків падінейшин кінець
+
+.swiper-pagination-bullet-active {
+
+    background-color: transparent;
+    // background-image: url(../image/home.svg);
+    display: inline-flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 1;
+box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+}
+// ФОТО АВАТАРА
+
+.thumb{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+.thumb__img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
 }
 
-.wrap{
+
+
+
+
+// .swiper-slide__avatar {
+//     background-image: url(../image/avatar/vika.jpg);
+
+//     height: 85px;
+//     width: 85px;
+//     margin-bottom: 32px;
+
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     border-radius: 50%;
+// }
+
+
+.swiper-slide__content {
     position: relative;
     background: #FAFAFA;
     padding-left: 50px;
@@ -55,58 +123,88 @@
     padding-top: 43px;
     padding-bottom: 17px;
 
-    margin-bottom: 16px;
-    
+    margin-bottom: 36px;
 
 }
 
-.slider__text::after{
-    content: '\201C';
-    color: #E1E1E1;
-    font-size:120px;
+.swiper-slide__subtitle {
+    position: relative;
+}
+
+.swiper-slide__content::after {
+
+    content: '\22EF';
     position: absolute;
-    top: 20px;
-    left:50px;
-    transform: rotate(-180deg);
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+
+    color: #C7133E;
+    font-size: 40px;
+}
+
+.swiper-slide__content::before {
+    content: ' ';
+    position: absolute;
+    top: 30px;
+    left: 53px;
+    z-index: 1;
+    background-image: url(../images/customer-reviews/mobile/cust-quotes-mob-x1.png);
+    width: 54px;
+    height: 40px;
+
+
 }
 
 
+.swiper-slide__text {
+    flex-basis: 87%;
 
-.slider__text{
-    width: 80%;
-    text-indent: 54px;
+    z-index: 2;
 
-    font-weight: 700;
     font-size: 12px;
-    line-height: 31px;
+    line-height: 2.58;
     text-align: center;
-    
-    color: #000000;
-  
+
 }
 
-.wight{
+.swiper-slide__thumb {
     display: flex;
     text-align: center;
     justify-content: center;
     width: 100%;
-    background-image: repeating-linear-gradient(
-        to bottom,
-        transparent 0 30px,
-         #E1E1E1 30px 31px);
+    background-image: repeating-linear-gradient(to bottom,
+            transparent 0 30px,
+            #E1E1E1 30px 31px);
+
+    // border-bottom: 1px solid #E1E1E1;
 }
 
-.swiper-slide__subtitle{
-    
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 186%;
-        /* or 26px */
-    
-        text-align: center;
-    
-        color: #000000;
+.swiper-slide__subtitle {
 
-        margin-bottom: 28px;
+    line-height: 1.86;
+    text-align: center;
+    margin-bottom: 76px;
 }
 
+// Стилі для соц мереж
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+.social-list__link {
+    height: 44px;
+    width: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list__icon {
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+}
