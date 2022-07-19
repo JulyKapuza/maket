@@ -91,7 +91,12 @@ address {
   text-decoration: none;
 }
 
-.section__title {
+.section-wrap {
+  text-align: center;
+}
+
+.section-wrap__title {
+  display: inline-block;
   position: relative;
   color: var(--title-text-color);
   font-weight: 700;
@@ -99,6 +104,16 @@ address {
   line-height: 1.48;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.section-wrap__title::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 45px;
+  background-color: var(--title-text-color);
 }
 
 .section__text {
@@ -445,6 +460,12 @@ address {
 
 .section__title--big {
   text-transform: uppercase;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.48;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .accent {
@@ -466,26 +487,11 @@ address {
   background: #353535;
 }
 
-.about {
-  position: relative;
-}
-
 .about__item {
   display: inline-block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.about__item::after {
-  position: absolute;
-  top: 350px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  content: "";
-  width: 50%;
-  height: 60px;
-  background: rgba(76, 175, 80, 0.8);
+  border-bottom: 6px solid rgba(76, 175, 80, 0.8);
 }
 
 .about__item:first-child {
@@ -631,10 +637,13 @@ address {
   padding: 20px;
 }
 
+.card-content--right {
+  text-align: right;
+}
+
 .card-content__title {
   font-size: 18px;
   line-height: 1.17;
-  text-align: right;
   letter-spacing: 1.152px;
   color: #252525;
   margin-bottom: 17px;
@@ -643,7 +652,6 @@ address {
 .card-content__text {
   font-size: 13px;
   line-height: 1.77;
-  text-align: right;
   letter-spacing: 0.832px;
   color: #C2C2C2;
 }
@@ -830,4 +838,93 @@ address {
   height: 20px;
   width: 20px;
   fill: currentColor;
+}
+
+.team {
+  max-width: 370px;
+}
+
+.team__item {
+  position: relative;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.team__subtitle {
+  font-family: var(--title-font);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+.team__subtitle--hidden {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.team__item:hover .team__subtitle--hidden {
+  opacity: 0;
+}
+
+.team-overlay {
+  -webkit-backdrop-filter: sepia(90%);
+          backdrop-filter: sepia(90%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 250ms var(--timing), -webkit-transform 250ms var(--timing);
+  transition: opacity 250ms var(--timing), -webkit-transform 250ms var(--timing);
+  transition: transform 250ms var(--timing), opacity 250ms var(--timing);
+  transition: transform 250ms var(--timing), opacity 250ms var(--timing), -webkit-transform 250ms var(--timing);
+}
+.team__item:hover .team-overlay, .team__item:focus .team-overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.team-overlay__subtitle {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.team-overlay__post {
+  margin-bottom: 5px;
+}
+
+.team-overlay__desc {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #777777;
 }/*# sourceMappingURL=main.css.map */

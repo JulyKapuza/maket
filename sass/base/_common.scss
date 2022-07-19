@@ -44,8 +44,12 @@ address {
     text-decoration: none;
 
 }
+.section-wrap{
+    text-align: center;
+}
 
-.section__title {
+.section-wrap__title {
+    display: inline-block;
     position: relative;
     color: var(--title-text-color);
     font-weight: 700;
@@ -53,8 +57,19 @@ address {
     line-height: 1.48;
     text-align: center;
     margin-bottom: 50px;
+    
 }
 
+.section-wrap__title::before{
+    position: absolute;
+    content: '';
+    bottom:0;
+    left:0;
+    height: 2px;
+    width: 45px;
+    background-color: var(--title-text-color);
+
+}
 
 .section__text{
     position: relative;

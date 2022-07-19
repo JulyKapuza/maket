@@ -18,17 +18,13 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
-
-
     <link rel="stylesheet" href="./css/main.min.css" />
-
-   
-    
-    
     <title>Document</title>
   </head>
   <body>
-    <!-- Шапка сторінки -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Шапка сторінки                              -->
+    <!-- ----------------------------------------------------------------------- -->
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
@@ -86,7 +82,9 @@
       </div>
     </header>
     <main>
-      <!-- Секція герой -->
+       <!-- ----------------------------------------------------------------------- -->
+       <!--                              Секція герой                               -->
+       <!-- ----------------------------------------------------------------------- -->
       <section class="hero hero--overlay">
         <div class="container">
           <h1 class="hero__title">Where great ideas come to life</h1>
@@ -98,12 +96,18 @@
           </ul>
         </div>
       </section>
-      <!-- Секція про нас -->
+
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                              Секція про нас                             -->
+      <!-- ----------------------------------------------------------------------- -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title section__title--big">
+          <div class="section-wrap">
+            <h2 class="section__title--big">
             We are <span class="accent">the sqwd</span>
           </h2>
+          </div>
+          
           <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt.
@@ -122,10 +126,15 @@
           </p>
         </div>
       </section>
-      <!-- Секція послуги -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                             Секція послуги                              -->
+      <!-- ----------------------------------------------------------------------- -->
       <section class="section section--grey">
         <div class="container">
-          <h2 class="section__title">Our Services</h2>
+          <div class="section-wrap">
+            <h2 class="section-wrap__title">Our Services</h2>
+          </div>
+          
           <ul class="services list">
             <li class="services__item">
               <div class="services__box">
@@ -177,10 +186,15 @@
           </ul>
         </div>
       </section>
-      <!-- Секція приклади робіт -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                          Секція приклади робіт                          -->
+      <!-- ----------------------------------------------------------------------- -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Latest Works</h2>
+          <div class="section-wrap">
+            <h2 class="section-wrap__title">Latest Works</h2>
+          </div>
+          
           <ul class="works list">
             <li class="works__item"><button class="works__btn" type="button">All</button></li>
             <li class="works__item">
@@ -198,7 +212,7 @@
             <li class="gallery__item">
               <a class="gallery__link link" href="">
                 <img src="./image/works/photo.jpg" alt="Camera" width="455" />
-                <div class="card-content">
+                <div class="card-content card-content--right">
                   <h3 class="card-content__title">Photography</h3>
                   <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -216,7 +230,7 @@
             <li class="gallery__item">
               <a class="gallery__link link" href="">
                 <img src="./image/works/screen.jpg" alt="Screen" width="455" />
-                <div class="card-content">
+                <div class="card-content card-content--right">
                   <h3 class="card-content__title">Photography</h3>
                   <p class="card-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -235,21 +249,51 @@
         </div>
       </section>
 
-      <!-- Секція команда -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                             Секція команда                              -->
+      <!-- ----------------------------------------------------------------------- -->
       <section class="section">
         <div class="container">
-
-
-
-          <h2>The Team</h2>
-          <ul class="list">
-            <li><img src="./image/team/tom.jpg" alt="Tom Jones" width="370" /></li>
-            <li><img src="./image/team/michael.jpg" alt="Michael Fraup" width="370" /></li>
-            <li><img src="./image/team/tim.jpg" alt="Tim Cahill" width="370" /></li>
+          <div class="section-wrap">
+            <h2 class="section-wrap__title">The Team</h2>
+          </div>
+          <ul class="team list">
+            <li class="team__item">
+              <img class="team__img" src="./image/team/tom.jpg" alt="Tom Jones" width="370" />
+              <p class="team__subtitle team__subtitle--hidden">Tom Jones</p>
+              <div class="team-overlay">
+                <p class="team-overlay__subtitle team__subtitle">Tom Jones</p>
+                <p class="team-overlay__post team__subtitle">Project Manager</p>
+                <p class="team-overlay__desc">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+              
+            <li class="team__item">
+              <img class="team__img" src="./image/team/michael.jpg" alt="Michael Fraup" width="370" />
+               <p class="team__subtitle team__subtitle--hidden ">Michael Fraup</p>
+               <div class="team-overlay">
+                <p class="team-overlay__subtitle team__subtitle">Michael Fraup</p>
+                <p class="team-overlay__post team__subtitle">Creative Director</p>
+                <p class="team-overlay__desc">Create with simplicity in mind!</p>
+              </div>
+            </li>
+             
+            <li class="team__item">
+              <img class="team__img" src="./image/team/tim.jpg" alt="Tim Cahill" width="370" />
+            <p class="team__subtitle team__subtitle--hidden">Tim Cahill</p>
+            <div class="team-overlay">
+                <p class="team-overlay__subtitle team__subtitle">Tim Cahill</p>
+                <p class="team-overlay__post team__subtitle">Designer</p>
+                <p class="team-overlay__desc">Lorem ipsum dolor sit amet.</p>
+              </div>
+          </li>
+              
           </ul>
         </div>
       </section>
-      <!-- Секція відгуки reviews -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                         Секція відгуки reviews                          -->
+      <!-- ----------------------------------------------------------------------- -->
 
       <section class="section reviews">
   <div class="container">
@@ -461,7 +505,9 @@ But the project work helped me to apply this knowledge  and to receive the suppo
 </section>
 
     </main>
-    <!-- Футер -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Футер                                  -->
+    <!-- ----------------------------------------------------------------------- -->
     <footer>
       <div class="container">
         <div>
