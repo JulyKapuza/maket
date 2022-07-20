@@ -1,0 +1,51 @@
+.cooperation{
+    display: flex;
+}
+.cooperation__item{
+    flex-basis: 50%;
+    display: flex;
+}
+
+.cooperation__btn{
+    display: inline-flex;
+    padding: 10px 30px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--bgc-grey);
+    color: var(--title-text-color);
+    width: 100%;
+    cursor: pointer;
+}
+
+.cooperation__icon{
+    fill: var(--title-text-color);
+    margin-bottom: 20px;
+}
+
+.cooperation__icon--inverse{
+    fill: var(--white-color);
+}
+.cooperation__subtitle{
+    font-family: var(--title-font);
+    
+    font-weight: 400;
+    font-size: 14px;
+    // планшет 24px
+    line-height: 1.5;
+    letter-spacing: 2.6px;
+    
+    
+}
+
+.cooperation__desc{
+    display: none;
+    // з 768 добавить
+}
+
+.cooperation__btn--inverse{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+
+}
