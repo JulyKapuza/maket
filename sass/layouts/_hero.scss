@@ -3,6 +3,11 @@
     padding-top: 130px;
     padding-bottom: 130px;
     background-color: var(--dark-bgc-hero);
+
+    @media screen and (min-width:768px) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
     
 
     
@@ -21,13 +26,7 @@
      rgba(27, 28, 29, 0.6),
       rgba(10, 10, 10)),
     url(../image/bitmap.jpg);
-    // radial-gradient(
-    //     at center,
-    //     rgba(151, 151, 151, 0,4) 10%,
-    //     #121113 50%),
-    // url(../image/bitmap.jpg)  ;
-
-  
+    
 
 
 }

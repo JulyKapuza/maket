@@ -27,7 +27,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                             Шапка сторінки                              -->
     <!-- ----------------------------------------------------------------------- -->
-    <header class="page-header">
+    <header class="header">
       <div class="container">
         <nav class="main-nav">
           <a class="logo link tracking-in-expand" href="">SQWD</a>
@@ -43,8 +43,7 @@
             </svg>
           </button>
           <button class="button button--primary main-nav__button" type="button">
-            Contact us >
-          </button>
+            Contact us</button>
 
           <div class="menu-container js-menu-container" id="menu-container">
             <button
@@ -59,7 +58,7 @@
             </button>
 
             <div class="menu-container__nav">
-              <button class="button button--primary button--hidden" type="button">Contact us ></button>
+              <button class="button button--primary button--hidden" type="button">Contact us</button>
 
               <ul class="site-nav list">
                 <li class="site-nav__item">
@@ -110,22 +109,27 @@
           </h2>
           </div>
           
-          <p class="section__text">
+          <div class="holder">
+            <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt.
           </p>
+          </div>
+
           <ul class="about list">
-            <li class="about__item">
+            <li class="about__item about__item--position">
               <img src="./image/about/portrait.jpg" alt="Portrait" width="309" />
             </li>
             <li class="about__item">
               <img src="./image/about/silhouette.jpg" alt="Silhouette" width="309" />
             </li>
           </ul>
-          <p class="section__text">
+          <div class="holder holder-right">
+            <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt.
           </p>
+          </div>
         </div>
       </section>
       <!-- ----------------------------------------------------------------------- -->
@@ -311,7 +315,7 @@
         </div>
         <div class="swiper-slide">
           <p class="swiper-slide__reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <p class="swiper-slide__autor"> <span class="swiper-slide__accent">Peter Shilton</span> / Web Design</p>
+          <p class="swiper-slide__autor swiper-slide__autor--five"> <span class="swiper-slide__accent">Peter Shilton</span> / Web Design</p>
         </div>
         <div class="swiper-slide">
           <p class="swiper-slide__reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -346,7 +350,7 @@
 <!-- ----------------------------------------------------------------------- -->
 <!--                            Секція співпраця                             -->
 <!-- ----------------------------------------------------------------------- -->
-<section class="section">
+<section class="section section--without-padding">
   <div class="container">
     <ul class="cooperation list">
     <li  class="cooperation__item">
@@ -373,27 +377,63 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                  Футер                                  -->
     <!-- ----------------------------------------------------------------------- -->
-    <footer>
-      <div class="container">
-        <div>
+    <footer class="footer">
+      <div class="container footer-top">
+        <a class="logo footer-list__logo link" href="">SQWD</a>
           <address>
-            <ul class="list">
-              <li>
-                <a class="link" href="https://goo.gl/maps/MxQPXMf4m8k7n9KbA"
+            <ul class="footer-list list">
+              <li class="footer-list__item">
+                <a class="footer-list__link link" href="https://goo.gl/maps/MxQPXMf4m8k7n9KbA"
                   >3rd Floor, Santa Monica Beach, CA, San Francisco</a
                 >
               </li>
-              <li><a class="link" href="tel:+3590123456789">(359) 0 123 456 789</a></li>
-              <li><a class="link" href="mailto:info@yourmail.com">info@yourmail.com</a></li>
+              <li class="footer-list__item">
+                <a class="footer-list__link link" href="tel:+3590123456789">(359) 0 123 456 789</a></li>
+              <li class="footer-list__item">
+                <a class="footer-list__link link" href="mailto:info@yourmail.com">info@yourmail.com</a></li>
             </ul>
           </address>
+          <ul class="socials list">
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  aria-label="facebook"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./image/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  aria-label="twitter"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./image/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  aria-label="pinterest"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./image/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
         </div>
-        <div>
-          <p>Copyright 2016 - All Rights Reserved - Designed by JD</p>
-        </div>
+      <div class="container footer-bottom">
+          <p class="footer-bottom__text">Copyright 2016 - All Rights Reserved - Designed by JD</p>
       </div>
     </footer>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="js/header-scroll.js"></script>
    
    
   </body>

@@ -1,0 +1,15 @@
+.footer-bottom{
+    background-color: var(--title-text-color);
+}
+
+.footer-bottom__text{
+    text-align: center;
+    font-family: var(--title-font);
+    font-weight: 300;
+    font-size: 10px;
+    // tablet 13px
+    line-height: 19px;
+    letter-spacing: 0.832px;
+    
+    color: rgba(255, 255, 255, 0.5);
+}

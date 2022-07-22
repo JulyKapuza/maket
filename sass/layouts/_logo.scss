@@ -3,8 +3,21 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.17;
+    
 
     color: var(--accent-color);
+
+    letter-spacing: .1em;
+    text-shadow:
+    0 -1px 0 rgb(0, 0, 0),
+        10px 8px 0 #dbdbdb,
+        10px 9px 0 #1a1a1a,
+        10px 10px 0 #181818,
+        10px 11px 0 #161616,
+        10px 12px 0 #141414,
+        10px 13px 0 #121212,
+        10px 22px 30px rgb(0 0 0 / 90%);
+
 
     @media screen and (min-width:768px){
         flex-grow: 1;

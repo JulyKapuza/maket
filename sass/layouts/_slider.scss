@@ -52,10 +52,21 @@
     bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(../image/starts.png);
+    background-image: url(../image/four.png);
     width: 111px;
     height: 15px;
  }
+
+.swiper-slide__autor--five::after{
+   position: absolute;
+      content: '';
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 111px;
+      height: 15px;
+      background-image: url(../image/five.png);
+}
 
  .swiper-slide__accent{
     
@@ -79,3 +90,5 @@
  .swiper-button-prev{
     color: var(--accent-color);
  }
+
+ 

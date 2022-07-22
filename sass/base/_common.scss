@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--white-color);
     color: var(--primary-text-color);
@@ -37,6 +41,11 @@ address {
 
     &--no-padding {
         padding-top: 0;
+    }
+
+    &--without-padding{
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
