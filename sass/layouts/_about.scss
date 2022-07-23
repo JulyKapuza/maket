@@ -22,10 +22,19 @@
 
 
 .holder{
-    width: 50%;   
-}
+
+    width: 80%;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px){
+        width: 50%;
+        }
+    }
+
  .holder-right{
     margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 10px;
  }
 
 .section__text::after{

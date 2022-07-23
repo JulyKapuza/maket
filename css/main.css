@@ -58,6 +58,14 @@ body {
   font-size: 14px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+.body.no-scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -347,15 +355,22 @@ address {
     display: none;
     position: fixed;
     top: 0%;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
   .menu-container.is-open {
     background-color: #1b1c1d;
     padding-top: 48px;
     z-index: 1;
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 45%;
   }
 }
 @media screen and (min-width: 320px) {
@@ -380,10 +395,41 @@ address {
   }
 }
 
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 .menu-container .menu-toggle {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .menu-container .menu-toggle {
+    top: 20px;
+    right: 30px;
+  }
 }
 
 .menu-container__nav {
@@ -503,11 +549,19 @@ address {
 }
 
 .holder {
-  width: 50%;
+  width: 80%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .holder {
+    width: 50%;
+  }
 }
 
 .holder-right {
   margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .section__text::after {
